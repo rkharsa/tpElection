@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "StockCharts",
+        "repositoryURL": "https://github.com/denniscm190/stock-charts.git",
+        "state": {
+          "branch": null,
+          "revision": "5a374cada5703ae6da1e11f1b28afed2cc96984c",
+          "version": "1.2.9"
+        }
+      },
+      {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms.git",
+        "state": {
+          "branch": null,
+          "revision": "2327673b0e9c7e90e6b1826376526ec3627210e4",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "6583ac70c326c3ee080c1d42d9ca3361dca816cd",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

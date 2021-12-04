@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+    let coloredAppearance = UINavigationBarAppearance()
+    coloredAppearance.configureWithOpaqueBackground()
+    coloredAppearance.backgroundColor = UIColor(named: "Color-1")
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white,.font:UIFont(name: "Avenir", size: 20)!]
+    coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+  
+    UINavigationBar.appearance().standardAppearance = coloredAppearance
+    UINavigationBar.appearance().compactAppearance = coloredAppearance
+    UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        
+    UINavigationBar.appearance().tintColor = .white
+  }
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+     TabRootView()
     }
 }
 
@@ -19,3 +32,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
+
+

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1599D2152752ED1900A2330B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D2142752ED1900A2330B /* Algorithms */; };
+		1599D21D2752F23800A2330B /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D21C2752F23800A2330B /* StockCharts */; };
+		1599D22227539D7700A2330B /* VoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22127539D7700A2330B /* VoteView.swift */; };
+		1599D22427539DE200A2330B /* TabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22327539DE200A2330B /* TabRootView.swift */; };
+		1599D22627539E8200A2330B /* CandidatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22527539E8200A2330B /* CandidatsView.swift */; };
+		1599D22827539EBA00A2330B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22727539EBA00A2330B /* StatsView.swift */; };
+		1599D22B27539F3C00A2330B /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22A27539F3C00A2330B /* CustomTextEditor.swift */; };
+		1599D22D2753A60500A2330B /* VoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22C2753A60500A2330B /* VoteViewModel.swift */; };
+		1599D22F275B716000A2330B /* CandidatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22E275B716000A2330B /* CandidatsViewModel.swift */; };
+		1599D231275B717800A2330B /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D230275B717800A2330B /* StatsViewModel.swift */; };
+		1599D233275B71C600A2330B /* VoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D232275B71C600A2330B /* VoteRepository.swift */; };
+		1599D235275B71DB00A2330B /* CandidatsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D234275B71DB00A2330B /* CandidatsRepository.swift */; };
+		1599D237275B71F200A2330B /* StatsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D236275B71F200A2330B /* StatsRepository.swift */; };
 		159F5B19274052560056DC17 /* electionTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F5B18274052560056DC17 /* electionTPApp.swift */; };
 		159F5B1B274052570056DC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F5B1A274052570056DC17 /* ContentView.swift */; };
 		159F5B1D274052580056DC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159F5B1C274052580056DC17 /* Assets.xcassets */; };
@@ -14,6 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1599D22127539D7700A2330B /* VoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteView.swift; sourceTree = "<group>"; };
+		1599D22327539DE200A2330B /* TabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootView.swift; sourceTree = "<group>"; };
+		1599D22527539E8200A2330B /* CandidatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatsView.swift; sourceTree = "<group>"; };
+		1599D22727539EBA00A2330B /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		1599D22A27539F3C00A2330B /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
+		1599D22C2753A60500A2330B /* VoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewModel.swift; sourceTree = "<group>"; };
+		1599D22E275B716000A2330B /* CandidatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatsViewModel.swift; sourceTree = "<group>"; };
+		1599D230275B717800A2330B /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		1599D232275B71C600A2330B /* VoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteRepository.swift; sourceTree = "<group>"; };
+		1599D234275B71DB00A2330B /* CandidatsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatsRepository.swift; sourceTree = "<group>"; };
+		1599D236275B71F200A2330B /* StatsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRepository.swift; sourceTree = "<group>"; };
 		159F5B15274052560056DC17 /* electionTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = electionTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159F5B18274052560056DC17 /* electionTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = electionTPApp.swift; sourceTree = "<group>"; };
 		159F5B1A274052570056DC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +50,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1599D21D2752F23800A2330B /* StockCharts in Frameworks */,
+				1599D2152752ED1900A2330B /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1599D21E27539CEA00A2330B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1599D22927539EF800A2330B /* SharedComponents */,
+				1599D22127539D7700A2330B /* VoteView.swift */,
+				1599D22327539DE200A2330B /* TabRootView.swift */,
+				1599D22527539E8200A2330B /* CandidatsView.swift */,
+				1599D22727539EBA00A2330B /* StatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1599D21F27539D0400A2330B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1599D22C2753A60500A2330B /* VoteViewModel.swift */,
+				1599D22E275B716000A2330B /* CandidatsViewModel.swift */,
+				1599D230275B717800A2330B /* StatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1599D22027539D2200A2330B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1599D232275B71C600A2330B /* VoteRepository.swift */,
+				1599D234275B71DB00A2330B /* CandidatsRepository.swift */,
+				1599D236275B71F200A2330B /* StatsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1599D22927539EF800A2330B /* SharedComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1599D22A27539F3C00A2330B /* CustomTextEditor.swift */,
+			);
+			path = SharedComponents;
+			sourceTree = "<group>";
+		};
 		159F5B0C274052560056DC17 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +117,9 @@
 		159F5B17274052560056DC17 /* electionTP */ = {
 			isa = PBXGroup;
 			children = (
+				1599D22027539D2200A2330B /* Repositories */,
+				1599D21F27539D0400A2330B /* ViewModels */,
+				1599D21E27539CEA00A2330B /* Views */,
 				159F5B18274052560056DC17 /* electionTPApp.swift */,
 				159F5B1A274052570056DC17 /* ContentView.swift */,
 				159F5B1C274052580056DC17 /* Assets.xcassets */,
@@ -83,6 +152,10 @@
 			dependencies = (
 			);
 			name = electionTP;
+			packageProductDependencies = (
+				1599D2142752ED1900A2330B /* Algorithms */,
+				1599D21C2752F23800A2330B /* StockCharts */,
+			);
 			productName = electionTP;
 			productReference = 159F5B15274052560056DC17 /* electionTP.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,10 @@
 				Base,
 			);
 			mainGroup = 159F5B0C274052560056DC17;
+			packageReferences = (
+				1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */,
+			);
 			productRefGroup = 159F5B16274052560056DC17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1599D231275B717800A2330B /* StatsViewModel.swift in Sources */,
+				1599D22F275B716000A2330B /* CandidatsViewModel.swift in Sources */,
+				1599D22D2753A60500A2330B /* VoteViewModel.swift in Sources */,
+				1599D235275B71DB00A2330B /* CandidatsRepository.swift in Sources */,
 				159F5B1B274052570056DC17 /* ContentView.swift in Sources */,
+				1599D233275B71C600A2330B /* VoteRepository.swift in Sources */,
+				1599D22227539D7700A2330B /* VoteView.swift in Sources */,
+				1599D22B27539F3C00A2330B /* CustomTextEditor.swift in Sources */,
+				1599D22827539EBA00A2330B /* StatsView.swift in Sources */,
+				1599D22427539DE200A2330B /* TabRootView.swift in Sources */,
 				159F5B19274052560056DC17 /* electionTPApp.swift in Sources */,
+				1599D22627539E8200A2330B /* CandidatsView.swift in Sources */,
+				1599D237275B71F200A2330B /* StatsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +431,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denniscm190/stock-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1599D2142752ED1900A2330B /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		1599D21C2752F23800A2330B /* StockCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */;
+			productName = StockCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 159F5B0D274052560056DC17 /* Project object */;
 }
