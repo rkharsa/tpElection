@@ -17,14 +17,14 @@ struct TabRootView: View {
             }.tag(0)
 
             NavigationView{
-                StatsView().navigationBarTitle(Text("Stats"),displayMode: .inline)
+                StatsView(statsViewModel: StatsViewModel()).navigationBarTitle(Text("Stats"),displayMode: .inline)
             }.tabItem {
                 Label("Stats", systemImage: "chart.pie.fill")
             }
      
             
             NavigationView{
-               CandidatsView().navigationBarTitle(Text("Parametrer"),displayMode: .inline)
+               CandidatsView(candidatsViewModel: CandidatsViewModel()).navigationBarTitle(Text("Parametrer"),displayMode: .inline)
             }.tabItem {
                 Label("Parametrer", systemImage: "gearshape.2")
             }.tag(3)

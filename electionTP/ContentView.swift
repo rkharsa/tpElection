@@ -11,7 +11,7 @@ struct ContentView: View {
     init() {
     let coloredAppearance = UINavigationBarAppearance()
     coloredAppearance.configureWithOpaqueBackground()
-    coloredAppearance.backgroundColor = UIColor(named: "Color-1")
+        coloredAppearance.backgroundColor = UIColor(Color.blue)
         coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white,.font:UIFont(name: "Avenir", size: 20)!]
     coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
   

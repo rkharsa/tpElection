@@ -8,49 +8,42 @@
 import SwiftUI
 
 struct VoteView: View {
-    @State private var pseudo : String="Rien"
-    var candidats : [String] = ["obama","jacque","rani","eminem"]
     @StateObject var voteViewModel : VoteViewModel
-    @State private var selection: String?
     var body: some View {
         VStack{
-
             HStack{
                 VStack{
                     List{
-                        ForEach(candidats, id: \.self) { candidat in
+                        ForEach(voteViewModel.candidats, id: \.id) { candidat in
                             HStack{
                                 Spacer()
-                                Text(candidat)
+                                Text(candidat.name)
                                     .font(.title3)
-                                  
-                                    .foregroundColor(selection==candidat ?  Color.green:Color.primary )
-                                                               
+                                
+                                    .foregroundColor(voteViewModel.selection==candidat.id ?  Color.green:Color.primary )
+                                
                                 Spacer()
-                                                           
+                            
                             }.contentShape(Rectangle()).frame(width: .infinity, height:50, alignment: .leading).onTapGesture {
-                                selection=candidat
+                                voteViewModel.selection=candidat.id
                             }
-                             
-
+                            
                         }
                     }.listStyle(PlainListStyle())
-                 
                     
- 
                 }
             }
+            
             Spacer()
+            
             HStack{
                 ZStack {
                     Button("Soumettre"){
                         print("soumettre");
                     }.frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(Color.white)
-                  
-                        
                 }
             }
-        }.padding(.top,-50)
+        }
     }
 }
 

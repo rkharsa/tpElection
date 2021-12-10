@@ -9,33 +9,32 @@ import SwiftUI
 import StockCharts
 
 struct StatsView: View {
-    var candidats : [String] = ["obama","jacque","rani","eminem","obama","jacque","rani","eminem"]
+    @StateObject var  statsViewModel :StatsViewModel
     var body: some View {
         VStack{
-            List(candidats, id: \.self){  _ in
+            List(statsViewModel.candidats, id: \.self){  result in
                 VStack{
                     VStack(alignment: .leading) {
-                        Text("Dennis Concepcion")
+                        Text(result.name)
                             .font(.title3)
                             .fontWeight(.semibold)
                         
-                        Text("Random guy")
+                        Text(String(result.voteNumber))+Text("/")+Text(String(statsViewModel.totalVotes))
                         
-                        CapsuleChartView(percentageOfWidth: 0.6, style: CapsuleChartStyle(capsuleColor: Color.blue))
+                        CapsuleChartView(percentageOfWidth: CGFloat(statsViewModel.calcPercentage(subTotal: Float(result.voteNumber), total: Float(statsViewModel.totalVotes))), style: CapsuleChartStyle(capsuleColor: Color.blue))
                             .padding(.bottom).padding(.top)
+                        
+                    }
                 }
-                }
-           
-                
+            }
+            Spacer()
         }
-        Spacer()
-        }
-            
-}
+        
+    }
 }
 
 struct StatsView_Previews: PreviewProvider {
     static var previews: some View {
-        StatsView()
+        StatsView(statsViewModel: StatsViewModel())
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157EB7D42764026600FB3B0F /* Candidat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB7D32764026600FB3B0F /* Candidat.swift */; };
+		159499CA2763DB7F000B8780 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 159499C92763DB7F000B8780 /* FirebaseFirestore */; };
+		159499CC2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */; };
+		159499CF2763DE54000B8780 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159499CE2763DE54000B8780 /* Vote.swift */; };
 		1599D2152752ED1900A2330B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D2142752ED1900A2330B /* Algorithms */; };
 		1599D21D2752F23800A2330B /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D21C2752F23800A2330B /* StockCharts */; };
 		1599D22227539D7700A2330B /* VoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D22127539D7700A2330B /* VoteView.swift */; };
@@ -19,7 +23,6 @@
 		1599D231275B717800A2330B /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D230275B717800A2330B /* StatsViewModel.swift */; };
 		1599D233275B71C600A2330B /* VoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D232275B71C600A2330B /* VoteRepository.swift */; };
 		1599D235275B71DB00A2330B /* CandidatsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D234275B71DB00A2330B /* CandidatsRepository.swift */; };
-		1599D237275B71F200A2330B /* StatsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599D236275B71F200A2330B /* StatsRepository.swift */; };
 		159F5B19274052560056DC17 /* electionTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F5B18274052560056DC17 /* electionTPApp.swift */; };
 		159F5B1B274052570056DC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F5B1A274052570056DC17 /* ContentView.swift */; };
 		159F5B1D274052580056DC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159F5B1C274052580056DC17 /* Assets.xcassets */; };
@@ -27,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157EB7D32764026600FB3B0F /* Candidat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidat.swift; sourceTree = "<group>"; };
+		159499CE2763DE54000B8780 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		1599D22127539D7700A2330B /* VoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteView.swift; sourceTree = "<group>"; };
 		1599D22327539DE200A2330B /* TabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootView.swift; sourceTree = "<group>"; };
 		1599D22527539E8200A2330B /* CandidatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatsView.swift; sourceTree = "<group>"; };
@@ -37,7 +42,6 @@
 		1599D230275B717800A2330B /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
 		1599D232275B71C600A2330B /* VoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteRepository.swift; sourceTree = "<group>"; };
 		1599D234275B71DB00A2330B /* CandidatsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatsRepository.swift; sourceTree = "<group>"; };
-		1599D236275B71F200A2330B /* StatsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRepository.swift; sourceTree = "<group>"; };
 		159F5B15274052560056DC17 /* electionTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = electionTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159F5B18274052560056DC17 /* electionTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = electionTPApp.swift; sourceTree = "<group>"; };
 		159F5B1A274052570056DC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,13 +55,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1599D21D2752F23800A2330B /* StockCharts in Frameworks */,
+				159499CC2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				1599D2152752ED1900A2330B /* Algorithms in Frameworks */,
+				159499CA2763DB7F000B8780 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		159499CD2763DE38000B8780 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				159499CE2763DE54000B8780 /* Vote.swift */,
+				157EB7D32764026600FB3B0F /* Candidat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1599D21E27539CEA00A2330B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +100,6 @@
 			children = (
 				1599D232275B71C600A2330B /* VoteRepository.swift */,
 				1599D234275B71DB00A2330B /* CandidatsRepository.swift */,
-				1599D236275B71F200A2330B /* StatsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 		159F5B17274052560056DC17 /* electionTP */ = {
 			isa = PBXGroup;
 			children = (
+				159499CD2763DE38000B8780 /* Models */,
 				1599D22027539D2200A2330B /* Repositories */,
 				1599D21F27539D0400A2330B /* ViewModels */,
 				1599D21E27539CEA00A2330B /* Views */,
@@ -155,6 +170,8 @@
 			packageProductDependencies = (
 				1599D2142752ED1900A2330B /* Algorithms */,
 				1599D21C2752F23800A2330B /* StockCharts */,
+				159499C92763DB7F000B8780 /* FirebaseFirestore */,
+				159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = electionTP;
 			productReference = 159F5B15274052560056DC17 /* electionTP.app */;
@@ -187,6 +204,7 @@
 			packageReferences = (
 				1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */,
+				159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 159F5B16274052560056DC17 /* Products */;
 			projectDirPath = "";
@@ -216,17 +234,18 @@
 			files = (
 				1599D231275B717800A2330B /* StatsViewModel.swift in Sources */,
 				1599D22F275B716000A2330B /* CandidatsViewModel.swift in Sources */,
+				159499CF2763DE54000B8780 /* Vote.swift in Sources */,
 				1599D22D2753A60500A2330B /* VoteViewModel.swift in Sources */,
 				1599D235275B71DB00A2330B /* CandidatsRepository.swift in Sources */,
 				159F5B1B274052570056DC17 /* ContentView.swift in Sources */,
 				1599D233275B71C600A2330B /* VoteRepository.swift in Sources */,
 				1599D22227539D7700A2330B /* VoteView.swift in Sources */,
 				1599D22B27539F3C00A2330B /* CustomTextEditor.swift in Sources */,
+				157EB7D42764026600FB3B0F /* Candidat.swift in Sources */,
 				1599D22827539EBA00A2330B /* StatsView.swift in Sources */,
 				1599D22427539DE200A2330B /* TabRootView.swift in Sources */,
 				159F5B19274052560056DC17 /* electionTPApp.swift in Sources */,
 				1599D22627539E8200A2330B /* CandidatsView.swift in Sources */,
-				1599D237275B71F200A2330B /* StatsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +452,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
@@ -452,6 +479,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		159499C92763DB7F000B8780 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
 		1599D2142752ED1900A2330B /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
