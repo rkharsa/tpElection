@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		157EB7D42764026600FB3B0F /* Candidat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB7D32764026600FB3B0F /* Candidat.swift */; };
-		159499CA2763DB7F000B8780 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 159499C92763DB7F000B8780 /* FirebaseFirestore */; };
-		159499CC2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */; };
 		159499CF2763DE54000B8780 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159499CE2763DE54000B8780 /* Vote.swift */; };
 		1599D2152752ED1900A2330B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D2142752ED1900A2330B /* Algorithms */; };
 		1599D21D2752F23800A2330B /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D21C2752F23800A2330B /* StockCharts */; };
@@ -55,9 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1599D21D2752F23800A2330B /* StockCharts in Frameworks */,
-				159499CC2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				1599D2152752ED1900A2330B /* Algorithms in Frameworks */,
-				159499CA2763DB7F000B8780 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +166,6 @@
 			packageProductDependencies = (
 				1599D2142752ED1900A2330B /* Algorithms */,
 				1599D21C2752F23800A2330B /* StockCharts */,
-				159499C92763DB7F000B8780 /* FirebaseFirestore */,
-				159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = electionTP;
 			productReference = 159F5B15274052560056DC17 /* electionTP.app */;
@@ -204,7 +198,6 @@
 			packageReferences = (
 				1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */,
-				159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 159F5B16274052560056DC17 /* Products */;
 			projectDirPath = "";
@@ -452,14 +445,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
@@ -479,16 +464,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		159499C92763DB7F000B8780 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		159499CB2763DB7F000B8780 /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 159499C82763DB7F000B8780 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
 		1599D2142752ED1900A2330B /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
