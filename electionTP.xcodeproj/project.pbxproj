@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157CCB42276688B30033D286 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157CCB41276688B30033D286 /* GoogleService-Info.plist */; };
+		157CCB4B2766936D0033D286 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 157CCB4A2766936D0033D286 /* FirebaseFirestore */; };
+		157CCB4D2766936D0033D286 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 157CCB4C2766936D0033D286 /* FirebaseFirestoreSwift-Beta */; };
 		157EB7D42764026600FB3B0F /* Candidat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB7D32764026600FB3B0F /* Candidat.swift */; };
 		159499CF2763DE54000B8780 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159499CE2763DE54000B8780 /* Vote.swift */; };
 		1599D2152752ED1900A2330B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1599D2142752ED1900A2330B /* Algorithms */; };
@@ -28,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157CCB41276688B30033D286 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		157EB7D32764026600FB3B0F /* Candidat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidat.swift; sourceTree = "<group>"; };
 		159499CE2763DE54000B8780 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		1599D22127539D7700A2330B /* VoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteView.swift; sourceTree = "<group>"; };
@@ -53,7 +57,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1599D21D2752F23800A2330B /* StockCharts in Frameworks */,
+				157CCB4D2766936D0033D286 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				1599D2152752ED1900A2330B /* Algorithms in Frameworks */,
+				157CCB4B2766936D0033D286 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +133,7 @@
 		159F5B17274052560056DC17 /* electionTP */ = {
 			isa = PBXGroup;
 			children = (
+				157CCB41276688B30033D286 /* GoogleService-Info.plist */,
 				159499CD2763DE38000B8780 /* Models */,
 				1599D22027539D2200A2330B /* Repositories */,
 				1599D21F27539D0400A2330B /* ViewModels */,
@@ -166,6 +173,8 @@
 			packageProductDependencies = (
 				1599D2142752ED1900A2330B /* Algorithms */,
 				1599D21C2752F23800A2330B /* StockCharts */,
+				157CCB4A2766936D0033D286 /* FirebaseFirestore */,
+				157CCB4C2766936D0033D286 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = electionTP;
 			productReference = 159F5B15274052560056DC17 /* electionTP.app */;
@@ -198,6 +207,7 @@
 			packageReferences = (
 				1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				1599D21B2752F23800A2330B /* XCRemoteSwiftPackageReference "stock-charts" */,
+				157CCB492766936D0033D286 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 159F5B16274052560056DC17 /* Products */;
 			projectDirPath = "";
@@ -214,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159F5B20274052580056DC17 /* Preview Assets.xcassets in Resources */,
+				157CCB42276688B30033D286 /* GoogleService-Info.plist in Resources */,
 				159F5B1D274052580056DC17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +456,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		157CCB492766936D0033D286 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
@@ -464,6 +483,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		157CCB4A2766936D0033D286 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157CCB492766936D0033D286 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		157CCB4C2766936D0033D286 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157CCB492766936D0033D286 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
 		1599D2142752ED1900A2330B /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1599D2132752ED1900A2330B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
